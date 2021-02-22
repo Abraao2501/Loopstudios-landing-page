@@ -84,24 +84,25 @@ nav ul li a:hover {
 .about {
     width: 100%;
     height: 100vh;
+    padding: 0 5.625rem 0 5.625rem;
     
     display: flex;
     align-items: center;
 }
 .about img {
     position: absolute;
-    left: 7.8rem;
-    margin-top: 4.4rem;
+    left: 5.7rem;
+    margin-top: 3.9rem;
 }
 .about article {
     position: absolute;
-    right: 0;
+    right: 5.6rem;
     
 
     background-color: var(--white);
 
     width: 40rem;
-    height: 20rem;
+    height: 19.5rem;
     
     padding: 4.5rem 4.5rem 0 4.5rem;
 }
@@ -116,4 +117,37 @@ nav ul li a:hover {
     font-family: 'Alata', sans-serif;
     font-size: 1rem;
     color: var(--dark-gray);
+}
+/*OUR CREATIONS*/
+section.creations-container {
+    display: flex;
+    
+
+    width: 100%;
+    height: 100vh;
+    padding: 8rem 5.625rem 0 5.625rem;
+}
+.our-creations-top {
+    width: 100%;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.our-creations-top h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+}
+.our-creations-top button {
+    background: var(--white);
+    border: solid 1.5px var(--black);
+
+    width: 7rem;
+    height: 2rem;
+
+    font-family: 'Alata', sans-serif;
+
+    cursor: pointer;
 }
