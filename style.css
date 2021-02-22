@@ -1,9 +1,7 @@
-body,
-html {
+* {
     margin: 0;
     padding: 0;
-
-    font-size: 15px;
+    box-sizing: border-box;
 }
 
 /*All content*/
@@ -14,10 +12,16 @@ main {
     width: 100%;
     height: 100vh;
 }
-
+/*Useful variables*/
+:root {
+    --white:hsl(0, 0%, 100%);
+    --black:hsl(0, 0%, 0%);
+    --dark-gray:hsl(0, 0%, 55%);
+    --very-dark-gray:hsl(0, 0%, 41%);
+}
 /*HEADER*/
 header {
-    padding: 50px 90px 0 90px;
+    padding: 3.125rem 5.625rem 0 5.625rem;
     height: 100vh;
 
     background: url(/images/desktop/image-hero.jpg); 
@@ -34,16 +38,16 @@ header {
 
 .imgLogo-titles h1 {
     width: 90%;
-    padding: 20px;
+    padding: 1.25rem;
     margin: 1.7em 0 0 0; 
 
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    font-size: 75px;
+    font-size: 4.6875rem;
 
-    color: white;
+    color: var(--white);
 
-    border: solid white 2px;  
+    border: solid var(--white) 2px;  
 }
 nav {
     width: 50%;
@@ -63,17 +67,53 @@ nav ul.navigation-links li {
     align-items: center;
 
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;  
+    font-size: 1.25rem;  
 }
 nav ul li a {
     text-decoration: none;
-    color: white;
-
-    animation-name: underlineWhite;
+    color: var(--white);
 }
 nav ul li a:hover {
     transition-duration: 0.8s;
 
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 1.5625rem;
+}
+
+/* ABOUT */
+.about {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+}
+.about img {
+    position: absolute;
+    left: 7.8rem;
+    margin-top: 4.4rem;
+}
+.about article {
+    position: absolute;
+    right: 0;
+    
+
+    background-color: var(--white);
+
+    width: 40rem;
+    height: 20rem;
+    
+    padding: 4.5rem 4.5rem 0 4.5rem;
+}
+.about article h1 {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 300;
+   font-size: 3rem;
+
+   margin: 0 0 2rem 0;
+}
+.about article p {
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    color: var(--dark-gray);
 }
