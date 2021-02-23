@@ -74,10 +74,9 @@ nav ul li a {
     color: var(--white);
 }
 nav ul li a:hover {
-    transition-duration: 0.8s;
-
+    transition: 0.8s;
     text-decoration: underline;
-    font-size: 1.5625rem;
+    transform:rotate(10deg);
 }
 
 /* ABOUT */
@@ -120,11 +119,8 @@ nav ul li a:hover {
 }
 /*OUR CREATIONS*/
 section.creations-container {
-    display: flex;
-    
-
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     padding: 8rem 5.625rem 0 5.625rem;
 }
 .our-creations-top {
@@ -150,4 +146,55 @@ section.creations-container {
     font-family: 'Alata', sans-serif;
 
     cursor: pointer;
+}
+.our-creations-top button:hover {
+    transition: 0.8s;
+    background: var(--black);
+    color: var(--white);
+}
+
+/*GRID CONTAINER*/
+div.grid-container {
+    display: grid;
+    grid-template-columns: 16rem 16rem 16rem 16rem;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+
+    margin-top: 5rem;
+}
+figure {
+    width: 16rem;
+    height: 28.125rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+figure figcaption {
+    position: absolute;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+
+    color: var(--white);
+    text-align: start;
+
+    width: 11rem;
+    margin-top: 20rem;
+
+    cursor: pointer;
+    
+}
+figure figcaption:hover{
+    transition: 0.8s;
+    text-decoration: underline;
+    transform:rotate(5deg)
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 50vh;
 }
