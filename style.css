@@ -194,7 +194,53 @@ figure figcaption:hover{
 }
 
 /*FOOTER*/
-footer {
+.end {
     width: 100%;
     height: 50vh;
+    padding: 10rem 0 0 0;
+}
+footer {
+    background-color: var(--black);
+    padding: 2.5rem 5.625rem 2.5rem 5.625rem;
+    display: flex;
+    flex-direction: column;
+}
+.container-logo-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-media img {
+    margin-left: 1rem;
+}
+.rights-reserved {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    margin-top: 1.5rem;
+}
+.rights-reserved nav {
+    width: 23rem;
+    height: 1.39rem;
+}
+.rights-reserved nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rights-reserved nav ul li {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;  
+}
+.rights-reserved p {
+    color: var(--very-dark-gray);
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
 }
