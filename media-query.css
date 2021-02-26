@@ -1,0 +1,78 @@
+@media(max-width: 1137px) {
+    html {
+        font-size: 14px;
+    }
+    .about article {
+        height: 22rem;
+    }
+    div.grid-container {
+        grid-row-gap: 6rem;
+    }
+    .end { 
+        padding: 40rem 0 0 0;
+    }
+}
+@media(max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul.navigation-links li {
+        font-size: 1.5rem;  
+    }
+    .imgLogo-titles h1 {
+        width: 100%;
+    }
+    .about article {
+        height: 25rem;
+    }
+    .about article h1 {
+        font-size: 2.5rem;
+     }
+     .about article p {
+         font-size: 1.5rem;
+    }
+    section.creations-container {
+        padding: 9rem 5.625rem 0 5.625rem;
+    }
+    div.grid-container {
+        grid-row-gap: 12rem;
+        grid-column-gap: 5rem;
+
+        margin-top: 9rem;
+    }
+    .end { 
+        padding: 55rem 0 0 0;
+    }
+}
+@media(max-width:890px) {
+    nav ul.navigation-links li {
+        font-size: 1.5rem;  
+    }
+    .our-creations-top button {     
+        width: 9rem;
+        height: 3rem; 
+    }
+    .imgLogo-titles {
+        width: 20rem;
+    }
+    .imgLogo-titles h1 {
+        width: 35rem;
+    }
+    .about img {
+        position: absolute;
+        left: 5rem;
+        width: 44rem;
+        height: 30rem;
+        margin-top: 3.9rem;
+    }
+    .about article {
+        padding: 5rem 5rem 0 5rem;
+        right: 0rem;
+    }
+    .end { 
+        padding: 95rem 0 0 0;
+    }
+}
