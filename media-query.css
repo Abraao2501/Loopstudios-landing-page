@@ -7,6 +7,7 @@
     }
     div.grid-container {
         grid-row-gap: 6rem;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 18rem));
     }
     .end { 
         padding: 40rem 0 0 0;
@@ -74,5 +75,244 @@
     }
     .end { 
         padding: 95rem 0 0 0;
+    }
+}
+@media(max-width: 764px) {
+    nav {
+       display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgLogo-titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: -5rem;
+    }
+    .imgLogo-titles img{
+       position: absolute;
+       top: 3rem;
+       left: 6rem;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        top: 3.5rem;
+        right: 6rem;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0 5.625rem 0 5.625rem;
+    }
+    .about img {
+        position: relative;
+        margin-top: 0;
+        
+
+        margin: 20rem 10rem 0 0;
+      
+    }
+    .about-container {
+        width: 100%;
+    }
+    .about article {
+        position: relative;
+        width: 100%;
+        padding: 4.5rem 3rem 0 3rem;
+    }
+    
+    .about article h1 {
+        text-align: center;
+     }
+     .about article p {
+         text-align: center;
+     }
+
+     div.grid-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+       grid-row-gap: 0rem;
+    }
+    figure {
+        width: 100%;
+        height: 15rem;
+    }
+    figure:not(:first-child) {
+        margin: 50px 0 0 0;
+    }
+    
+    figure figcaption {
+       text-align: center;
+       margin: 0 28rem 0 0;
+       font-size: 3rem;
+        
+    }
+    .img-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+    .see-all {
+        display: none;
+    }
+    .see-all-mobile {
+        display: block;
+        width: 15rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
+    .our-creations-top {
+        margin-top: 13rem;
+
+        justify-content: center;
+    }
+    .end { 
+        padding: 110rem 0 0 0;
+    }
+}
+@media(max-width:634px) {
+    figure figcaption {
+        text-align: center;
+        margin: 0 20rem 0 0;
+        font-size: 3rem;
+         
+     }
+}
+@media(max-width:550px) {
+    .imgLogo-titles h1 {
+        width: 80%;
+        padding: 1rem 7rem 1rem 1rem;
+        margin: 0 0 0 3.5rem; 
+        font-size: 3rem;
+    }
+    figure figcaption {
+        text-align: center;
+        margin: 0 20rem 0 0;
+        font-size: 2.5rem;
+     }
+    figure {
+        width: 100%;
+        height: 13rem;
+    }
+    figure:not(:first-child) {
+        margin: 2rem 0 0 0;
+    }
+    header {
+        padding: 3.125rem 4rem 0 4rem;
+    }
+    section.creations-container {
+        padding: 9rem 4rem 0 4rem;
+    }   
+    .about {
+        padding: 0 4rem 0 4rem;
+    }
+    .about img {
+        width: 75%;
+}
+    footer {
+        padding: 2.5rem 4rem 2.5rem 4rem;
+    }
+    .end { 
+        padding: 80rem 0 0 0;
+    }
+}
+@media(max-width:425px) {
+    .imgLogo-titles {
+        width: 100%;
+    }
+    .title-container {
+        width: 100%;
+    }
+    .imgLogo-titles h1 {
+        width: 90%;
+        padding: 1rem 7rem 1rem 1rem;
+        margin: 0 0 0 0; 
+        font-size: 3rem;
+    }
+    .about article {
+
+        padding: 4.5rem 1rem 0 1rem;
+    }
+    figure figcaption {
+        text-align: center;
+        margin: 0 15rem 0 0;
+        font-size: 2rem;
+     }
+    figure {
+        width: 100%;
+        height: 5rem;
+    }
+    figure:not(:first-child) {
+        margin: 5.5rem 0 0 0;
+    }
+    .end { 
+        padding: 50rem 0 0 0;
+    }
+    .imgLogo-titles img {
+        left: 4.5rem;
+    }
+    #menu {
+        right: 4.5rem;
+    }
+}
+@media(max-width:398px) {
+    .imgLogo-titles h1 {
+        width: 100%;
+        padding: 1rem 15rem 1rem 1rem;
+        margin: 0 0 0 0; 
+        font-size: 3rem;
+    }
+    figure figcaption {
+        margin: 0 11rem 0 0;
+        font-size: 2rem;
+     }
+    figure {
+        width: 100%;
+        height: 3.8rem;
+    }
+    figure:not(:first-child) {
+        margin: 5.5rem 0 0 0;
+    }
+    .our-creations-top h1{
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .about img {
+        width: 90%;
+    }
+    .end { 
+        padding: 40rem 0 0 0;
+    }
+}
+@media(max-width:358px) {
+    header {
+        padding: 3.125rem 3rem 0 3rem;
+    }
+    section.creations-container {
+        padding: 9rem 3rem 0 3rem;
+    }   
+    .about {
+        padding: 0 3rem 0 3rem;
+    }
+    
+    footer {
+        padding: 2.5rem 3rem 2.5rem 3rem;
     }
 }

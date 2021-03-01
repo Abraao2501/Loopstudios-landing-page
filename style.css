@@ -24,7 +24,7 @@ header {
     padding: 3.125rem 5.625rem 0 5.625rem;
     height: 100vh;
 
-    background: url(/images/desktop/image-hero.jpg); 
+    background: url(/images/desktop/image-hero.jpg) center; 
     background-repeat: no-repeat;
 
     display:flex;
@@ -156,7 +156,7 @@ section.creations-container {
 /*GRID CONTAINER*/
 div.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 18rem));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
     justify-content: center;
@@ -243,4 +243,28 @@ footer {
     color: var(--very-dark-gray);
     font-family: 'Alata', sans-serif;
     font-size: 1rem;
+}
+#menu {
+    display: none;
+}
+.img-mobile {
+    display: none;
+}
+.see-all-mobile{
+    background: var(--white);
+    border: solid 1.5px var(--black);
+
+    width: 7rem;
+    height: 2rem;
+
+    font-family: 'Alata', sans-serif;
+
+    cursor: pointer;
+
+    display: none;
+}
+.see-all-mobile:hover {
+    transition: 0.8s;
+    background: var(--black);
+    color: var(--white);
 }
